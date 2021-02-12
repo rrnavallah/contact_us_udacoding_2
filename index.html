@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	    <script src="https://kit.fontawesome.com/88c900b79a.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	  <link rel="icon" href="https://pbs.twimg.com/profile_images/1087712326193623040/H43hVJyS.jpg" type="image/x-icon">
+  <!-- https://animate.style/ -->
+	<title>login page transparan</title>
+	<style>
+		.avatar{
+	font-size: 50px;
+	background: #bdc3c7;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%,-50%);
+	color: #2c3e50;
+	border-radius: 50%; 
+}
+
+
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,0.5);
+	padding: 20px;
+	width: 400px;
+	box-shadow: 0 0 10px 5px black;
+}
+
+
+.login h2 {
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+	letter-spacing: 5px;
+}
+
+.box-login{
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
+border-bottom: 2px solid white;
+padding: 8px 0;
+}
+
+.box-login i {
+	font-size: 20px;
+	color: white;
+}
+
+.box-login input{
+	width: 100%;
+	padding: 0 10px;
+	background:none;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 18px;
+}
+
+.box-login input::placeholder{
+color: white;
+}
+
+.btn-login{
+	width: 100%;
+	background:none;
+	padding: 10px;
+	border: 1px solid white;
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn-login:hover{
+	background:rgba(0,0,0,0.8);
+}
+
+.buttom{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.bottom a {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+.bottom a:hover{
+	text-decoration: underline;
+}
+
+.slide1,.slide2,.slide3,.slide4 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.slide1{
+
+	background: url(a1.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	animation: fade 10s infinite;
+	-webkit-animation: fade 10s infinite; 
+}
+.slide2{
+	background: url(a2.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade2 10s infinite;
+	-webkit-animation: fade2 10s infinite; 
+}
+.slide3{
+
+	background: url(a3.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade3 10s infinite;
+	-webkit-animation: fade3 10s infinite; 
+}
+.slide4{
+
+	background: url(a4.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade4 10s infinite;
+	-webkit-animation: fade4 10s infinite; 
+}
+
+@keyframes fade {
+	0%{opacity: 1}
+	33.333% {opacity: 0}
+	66.666% {opacity: 0}
+	100% {opacity: 1}
+}
+@keyframes fade2 {
+	0%{opacity: 0}
+	33.333% {opacity: 1}
+	66.666% {opacity: 0}
+	100% {opacity: 0}
+}
+@keyframes fade3 {
+	0%{opacity: 0}
+	33.333% {opacity: 0}
+	66.666% {opacity: 1}
+	100% {opacity: 0}
+}
+@keyframes fade4 {
+	0%{opacity: 0}
+	33.333% {opacity: 0}
+	66.666% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="slide1"></div>
+	<div class="slide2"></div>
+	<div class="slide3"></div>
+	<div class="slide4"></div>
+
+	    <form action="" method="POST" autocomplete="">
+                     <div class="login animate__animated animate__zoomInDown">
+	
+		<h2>Contact Us</h2>
+<div class="avatar">
+			<i class="fa fa-user"></i>
+	
+		</div>
+<label style="color: white">NAME</label> 
+
+
+	<div class="box-login">
+					<i class="fa fa-user"></i>
+			<input type="text"  name="name" id="name" required >
+    </div>
+
+<label style="color: white">EMAIL</label> 
+	<div class="box-login">
+		<i class="fas fa-envelope-open-text"></i>
+			<i></i>
+			<input type="text" name="username" id="username" required >
+	</div>
+
+
+<label style="color: white">MESSAGE</label> 
+
+	<div class="box-login">
+		<i class="fas fa-inbox"></i>
+  <textarea name="namafield" cols="50" rows="6" 
+  style="background:none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: white;
+  font-size: 15px;
+  outline: none;">
+  </textarea>
+
+	</div>
+
+
+		<button type="submit" class="btn-login" name="login" style="background-image: linear-gradient(-90deg, yellow, green);">Send Your Message</button>
+		<div class="button" style="color: white;text-align: center;"></div>	
+	</div>
+          </form>
+          <footer>
+          	<marquee style="color: white;font-family:courier,arial,helvetica; padding-top: 700px">
+		<p>Selamat Datang di Website Udacoding &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Alamat:Perumahan Dhaya Pesona, Jl. Jombang Raya No.2, Jombang, Ciputat, South Tangerang City, Banten 15414
+		</p> 
+	</marquee>
+          </footer>
+	
+
+    
+</body>
+</html>
